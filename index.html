@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home">
+        <nav>
+            <img src="kuda.png" alt="logo" class="logo">
+            <ul>
+                <li><a onclick="scrollToSection('home')">HOME</a></li>
+                <li><a onclick="scrollToSection('about')">ABOUT</a></li>
+                <li><a onclick="scrollToSection('project')">PROJECTS</a></li>
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>I'm Saif <span>Musyanto</span></h1>
+            <p>This is my official portfolio website to shows all 
+                <br> Details and work experience web development
+            </p>
+            <section class="info">
+                <a href="https://twitter.com/otnaysum" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/saifmusyanto/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </section>
+            
+        </div>
+        <div class="images">
+            <img src="shape (2).png" class="shape">
+            <img src="about me.png" class="me">
+        </div>
+    </div>
+
+    <section id="about">
+        <section class="img">
+            <img src="aku.JPG" alt="about me">
+        </section>
+        <section class="about-content">
+            <h1>Saif <span>Musyanto</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ratione, dolore repellendus commodi consequuntur consectetur, mollitia ducimus maxime rerum deserunt repudiandae perferendis quas explicabo vero qui assumenda et ab reiciendis?</p>
+        </section>
+    </section>
+
+
+    <div id="project">
+        <div class="container">
+            <section class="kerjaan">
+                <h1>Project 1</h1>
+                <img src="https://api.dicebear.com/7.x/personas/svg?seed=Scooter" alt="bulan">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate possimus quia error illo. Illo totam</p>
+            </section>
+            <section class="kerjaan">
+                <h1>Project 2</h1>
+                <img src="https://api.dicebear.com/7.x/personas/svg?seed=Patches" alt="bulan">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate possimus quia error illo. Illo totam</p>
+            </section>
+            <section class="kerjaan">
+                <h1>Project 3</h1>
+                <img src="https://api.dicebear.com/7.x/personas/svg?seed=Chloe" alt="bulan">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate possimus quia error illo. Illo totam</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>@ 2023 Final Project Workshop Design Web </p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId){
+            document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+    
+</body>
+</html>
